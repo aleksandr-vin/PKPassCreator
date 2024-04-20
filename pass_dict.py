@@ -11,12 +11,8 @@ pass_dict = {
     },
     "organizationName": "European Union Aviation Safety Agency",
     "description": "Proof of completion of the online training for UAS Remote Pilot Open Category, on April 19, 2024 for Aleksandr Vinokurov",
-    # "labelColor": "rgb(230, 230, 230)",
-    # "foregroundColor": "rgb(255, 255, 255)",
-    # "backgroundColor": "rgb(10, 47, 141)",
     "labelColor": "rgb(241, 181, 68)",
     "foregroundColor": "rgb(255, 255, 255)",
-    #"backgroundColor": "rgb(0, 127, 194)",
     "backgroundColor": "rgb(0, 106, 180)",
     "generic": {
         "headerFields": [
@@ -81,7 +77,22 @@ pass_dict = {
                 "label" : "Certificate URL",
                 "value" : "https://learningzone.eurocontrol.int/ilp/customs/Reports/DACUASComp/Certificate/Validation/13821406/?key=a3cb535bb93a2298410a18364c13cf7f888a6ca53dc6be40859cbfb11f65f1e5"
             },
-                    {
+            {
+                "key" : "uas-safety-checklist-url",
+                "label" : "UAS Safety Checklist",
+                "value" : "https://aleksandr.vin/files/231122_SAFETY_CHECKLIST-EN.pdf"
+            },
+            {
+                "key" : "godrone-map-url",
+                "label" : "GoDrone map",
+                "value" : "https://map.godrone.nl"
+            },
+            {
+                "key" : "easa-light-drones-url",
+                "label" : "EASA Light > Drones",
+                "value" : "https://www.easa.europa.eu/en/light/topics/drones"
+            },
+            {
                 "key" : "website",
                 "label" : "Designed by",
                 "value" : "https://aleksandr.vin"
