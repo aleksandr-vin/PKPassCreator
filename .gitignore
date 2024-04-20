@@ -10,3 +10,6 @@ passkey.pem
 signature
 Generic.pkpass
 .DS_Store
+Certificates-pass
+Certificates.p12
+WWDR.pem
