@@ -75,13 +75,13 @@ def main():
     certificate_path = arguments["certificate_path"]
 
     #  Create pass certificate
-    os_code = os.system(f"{OPENSSL_APP} pkcs12 -in {certificate_path} -clcerts -nokeys -out passcertificate.pem -passin pass:{certificate_password}")
+    os_code = os.system(f"{OPENSSL_APP} pkcs12 -in {certificate_path} -clcerts -nokeys -out passcertificate.pem -passin pass:{certificate_password} -legacy")
     if os_code != 0:
         raise Exception("could not create pass certificate")
 
     key_password = "password"
     # Create pass key
-    os_code = os.system(f"{OPENSSL_APP} pkcs12 -in {certificate_path} -nocerts -out passkey.pem -passin pass:{certificate_password} -passout pass:{key_password}")
+    os_code = os.system(f"{OPENSSL_APP} pkcs12 -in {certificate_path} -nocerts -out passkey.pem -passin pass:{certificate_password} -passout pass:{key_password} -legacy")
     if os_code != 0:
         raise Exception("could not create pass key")
 
