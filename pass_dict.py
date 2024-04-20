@@ -1,74 +1,95 @@
 pass_dict = {
     "formatVersion": 1,
-    "serialNumber": "randomness",
-    "webServiceURL": "https://example.com/passes/",
+    "serialNumber": "0001",
+    "webServiceURL": "https://aleksandr.vin/passes/",
     "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
-    "locations": [
-        {"longitude": -122.3748889, "latitude": 37.6189722},
-        {"longitude": -122.03118, "latitude": 37.33182},
-    ],
     "barcode": {
-        "message": "123456789",
-        "format": "PKBarcodeFormatPDF417",
-        "messageEncoding": "iso-8859-1",
+        "format": "PKBarcodeFormatQR",
+        "message": "https://learningzone.eurocontrol.int/ilp/customs/Reports/DACUASComp/Certificate/Validation/13821406/?key=a3cb535bb93a2298410a18364c13cf7f888a6ca53dc6be40859cbfb11f65f1e5",
+        "messageEncoding": "UTF-8",
+        "altText":"Proof of completion"
     },
-    "organizationName": "Toy Town",
-    "description": "Toy Town Membership",
-    "logoText": "Toy Town",
+    "organizationName": "European Union Aviation Safety Agency",
+    "description": "Proof of completion of the online training for UAS Remote Pilot Open Category, on April 19, 2024 for Aleksandr Vinokurov",
+    # "labelColor": "rgb(230, 230, 230)",
+    # "foregroundColor": "rgb(255, 255, 255)",
+    # "backgroundColor": "rgb(10, 47, 141)",
+    "labelColor": "rgb(241, 181, 68)",
     "foregroundColor": "rgb(255, 255, 255)",
-    "backgroundColor": "rgb(197, 31, 31)",
+    #"backgroundColor": "rgb(0, 127, 194)",
+    "backgroundColor": "rgb(0, 106, 180)",
     "generic": {
-        "primaryFields": [{"key": "member", "value": "Johnny Appleseed"}],
+        "headerFields": [
+            {
+                "key": "open-sub-cat",
+                "label": "OPEN SUB CATEGORY",
+                "value": "A1/A3"
+            }
+        ],
+        "primaryFields": [
+            {
+                "key": "full-name",
+                "label": "UAS Remote Pilot Open Category",
+                "value": "Aleksandr Vinokurov"
+            },
+        ],
         "secondaryFields": [
-            {"key": "subtitle", "label": "MEMBER SINCE", "value": "2012"}
+            {
+                "key": "identification-number",
+                "label": "Identification number",
+                "value": "LUX-RP-19831004zljd"
+            },
+            {
+                "key": "valid-unitl",
+                "label": "Valid until (included)",
+                "value": "2029-04-19T00:00-00:00",
+                "dateStyle" : "PKDateStyleMedium",
+                # "timeStyle" : "PKDateStyleShort",
+                "textAlignment": "PKTextAlignmentRight",
+            },
         ],
         "auxiliaryFields": [
-            {"key": "level", "label": "LEVEL", "value": "Platinum"},
             {
-                "key": "favorite",
-                "label": "FAVORITE TOY",
-                "value": "Bucky Ball Magnets",
-                "textAlignment": "PKTextAlignmentRight",
+                "key": "authority",
+                "label": "Authority",
+                "value": "Direction de l'Aviation Civile\nGrand-Duché de Luxembourg"
+            },
+            {
+                "key": "country",
+                "label": "Country",
+                "value": "Luxembourg"
             },
         ],
         "backFields": [
             {
-                "numberStyle": "PKNumberStyleSpellOut",
-                "label": "spelled out",
-                "key": "numberStyle",
-                "value": 200,
+                "key": "title",
+                "label": "Proof of completion of the online training",
+                "value": "UAS Remote Pilot Open Category"
             },
             {
-                "label": "in Reals",
-                "key": "currency",
-                "value": 200,
-                "currencyCode": "BRL",
+                "key": "authority",
+                "label": "Authority",
+                "value": "Direction de l'Aviation Civile\nGrand-Duché de Luxembourg"
             },
             {
-                "dateStyle": "PKDateStyleFull",
-                "label": "full date",
-                "key": "dateFull",
-                "value": "1980-05-07T10:00-05:00",
+                "key": "country",
+                "label": "Country",
+                "value": "Luxembourg"
             },
             {
-                "label": "full time",
-                "key": "timeFull",
-                "value": "1980-05-07T10:00-05:00",
-                "timeStyle": "PKDateStyleFull",
+                "key" : "cert-url",
+                "label" : "Certificate URL",
+                "value" : "https://learningzone.eurocontrol.int/ilp/customs/Reports/DACUASComp/Certificate/Validation/13821406/?key=a3cb535bb93a2298410a18364c13cf7f888a6ca53dc6be40859cbfb11f65f1e5"
+            },
+                    {
+                "key" : "website",
+                "label" : "Designed by",
+                "value" : "https://aleksandr.vin"
             },
             {
-                "dateStyle": "PKDateStyleShort",
-                "label": "short date and time",
-                "key": "dateTime",
-                "value": "1980-05-07T10:00-05:00",
-                "timeStyle": "PKDateStyleShort",
-            },
-            {
-                "dateStyle": "PKDateStyleShort",
-                "label": "relative date",
-                "key": "relStyle",
-                "value": "2013-04-24T10:00-05:00",
-                "isRelative": True,
+                "key" : "phone",
+                "label" : "Phone",
+                "value" : "+31(6)13018394"
             },
         ],
     },
