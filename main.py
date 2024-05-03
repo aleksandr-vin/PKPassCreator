@@ -6,8 +6,11 @@ import shutil
 from typing import Callable, Optional, TypedDict
 from zipfile import ZipFile
 
-from drone_lic import pass_dict
-PK_PASS_NAME = "drone_lic"
+# from drone_lic import pass_dict
+# PK_PASS_NAME = "drone_lic"
+
+from de_klimmuur import pass_dict
+PK_PASS_NAME = "de_klimmuur"
 
 OPENSSL_APP = "openssl"
 

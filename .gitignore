@@ -13,3 +13,4 @@ Generic.pkpass
 Certificates-pass
 Certificates.p12
 WWDR.pem
+*.pkpass
