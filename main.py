@@ -6,10 +6,9 @@ import shutil
 from typing import Callable, Optional, TypedDict
 from zipfile import ZipFile
 
-from pass_dict import pass_dict
+from drone_lic import pass_dict
+PK_PASS_NAME = "drone_lic"
 
-
-PK_PASS_NAME = "Generic"
 OPENSSL_APP = "openssl"
 
 SUPPORTED_ASSET_FILES = [
