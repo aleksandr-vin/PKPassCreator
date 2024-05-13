@@ -6,7 +6,7 @@ pass_dict = {
     "barcode": {
         # The barcode format PKBarcodeFormatCode128 isn’t supported for watchOS.
         # https://developer.apple.com/documentation/walletpasses/pass/barcodes
-        "format": "PKBarcodeFormatQR", # Possible Values: PKBarcodeFormatQR, PKBarcodeFormatPDF417, PKBarcodeFormatAztec, PKBarcodeFormatCode128
+        "format": "PKBarcodeFormatCode128", # Possible Values: PKBarcodeFormatQR, PKBarcodeFormatPDF417, PKBarcodeFormatAztec, PKBarcodeFormatCode128
         "message": "12010956",
         "messageEncoding": "UTF-8",
         "altText":"12010956"
